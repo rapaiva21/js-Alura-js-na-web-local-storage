@@ -20,6 +20,9 @@ const handleNovoItem = (evento)=> {
   const criaTarefa = criarTarefa(dados)
 
   lista.appendChild(criaTarefa)
+
+  sessionStorage.setItem("tarefas", JSON.stringify(dados))
+
   input.value = " "
 }
 
